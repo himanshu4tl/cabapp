@@ -8,11 +8,11 @@ App.controller('landCtrl', function($scope,$rootScope,$q, $ionicLoading, $compil
 	
 	function set_map() {
 	    // Create an array of styles.
-			var styles = landInit.mapStyles();
+			//var styles = landInit.mapStyles();
 	  	
 		// Create a new StyledMapType object, passing it the array of styles, 
-			var styledMap = new google.maps.StyledMapType(styles,
-			{name: "Styled Map"});
+			/*var styledMap = new google.maps.StyledMapType(styles,
+			{name: "Styled Map"});*/
 	
 			var myLatlng = new google.maps.LatLng(43.07493,-89.381388);
         
@@ -27,8 +27,8 @@ App.controller('landCtrl', function($scope,$rootScope,$q, $ionicLoading, $compil
 			var map = new google.maps.Map(document.getElementById("map"),
 				mapOptions);
 			
-			 map.mapTypes.set('map_style', styledMap);
-			 map.setMapTypeId('map_style');
+			 //map.mapTypes.set('map_style', styledMap);
+			 //map.setMapTypeId('map_style');
 			
 			
 			$scope.map = map;
@@ -263,7 +263,7 @@ App.controller('landCtrl', function($scope,$rootScope,$q, $ionicLoading, $compil
 			
 			if(  $scope.start_box.lat == null ){
 				var alertPopup = $ionicPopup.alert({
-					 title: '<p class="text-center color-yellow">'+$filter('langTranslate')("FAILED",$rootScope.appConvertedLang['FAILED'])+'</p>',
+					 title: '<p class="text-center App_color_code">'+$filter('langTranslate')("FAILED",$rootScope.appConvertedLang['FAILED'])+'</p>',
 					 template: '<p class="text-center color-gery">'+$filter('langTranslate')("Enter pickup location",$rootScope.appConvertedLang['Enter_pickup_location'])+'</p>'
 				 });
 				 alertPopup.then(function(res) {
@@ -271,7 +271,7 @@ App.controller('landCtrl', function($scope,$rootScope,$q, $ionicLoading, $compil
 				 });
 			}else if($scope.end_box.lat == null){
 				 alertPopup = $ionicPopup.alert({
-					 title: '<p class="text-center color-yellow">'+$filter('langTranslate')("FAILED",$rootScope.appConvertedLang['FAILED'])+'</p>',
+					 title: '<p class="text-center App_color_code">'+$filter('langTranslate')("FAILED",$rootScope.appConvertedLang['FAILED'])+'</p>',
 					 template: '<p class="text-center color-gery">'+$filter('langTranslate')("Enter Drop location",$rootScope.appConvertedLang['Enter_Drop_location'])+'</p>'
 				 });
 				 alertPopup.then(function(res) {
@@ -420,14 +420,14 @@ App.controller('landCtrl', function($scope,$rootScope,$q, $ionicLoading, $compil
 				$ionicLoading.hide();
 				if( data.status = 'success'){
 					alertPopup = $ionicPopup.alert({
-						title: '<p class="text-center color-yellow">'+$filter('langTranslate')("SUCCESS",$rootScope.appConvertedLang['SUCCESS'])+'</p>',
+						title: '<p class="text-center App_color_code">'+$filter('langTranslate')("SUCCESS",$rootScope.appConvertedLang['SUCCESS'])+'</p>',
 						template: '<p class="text-center color-gery">'+$scope.trip_distance+' KM</p>'+
 											'<p class="text-center color-gery"> ₹ '+$scope.trip_rate+'</p>'
 					});
 					animateMyPop();
 				}else{
 					alertPopup = $ionicPopup.alert({
-						title: '<p class="text-center color-yellow">'+$filter('langTranslate')("FAILED",$rootScope.appConvertedLang['FAILED'])+'</p>',
+						title: '<p class="text-center App_color_code">'+$filter('langTranslate')("FAILED",$rootScope.appConvertedLang['FAILED'])+'</p>',
 						template: '<p class="text-center color-gery">'+$filter('langTranslate')("Process Failed!",$rootScope.appConvertedLang['Process_Failed'])+'</p>'+
 											'<p class="text-center color-gery">Try again! </p>'
 					});

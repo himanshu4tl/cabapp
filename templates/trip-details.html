@@ -8,7 +8,7 @@
 				
 				<div class="row ">
 						<div class="col col-50 " >
-								<p class='color-white'>{{ 'BOOKING ID' | langTranslate: appConvertedLang['BOOKING_ID'] }}</p>
+								<p class='App_color_code'>{{ 'BOOKING ID' | langTranslate: appConvertedLang['BOOKING_ID'] }}</p>
 						</div>
 						<div class="col col-50 " >
 							<div class="color-gery">{{details.uneaque_id}} </div>
@@ -16,7 +16,7 @@
 				</div>
 				<div class="row ">
 						<div class="col col-50 col-center" >
-								<p class='color-white'>{{ 'PICKUP POINT' | langTranslate: appConvertedLang['PICKUP_POINT'] }}</p>
+								<p class='App_color_code'>{{ 'PICKUP POINT' | langTranslate: appConvertedLang['PICKUP_POINT'] }}</p>
 							<div class=" color-gery">{{details.pickup_area}}</div>
 						</div>
 						<div class="col col-50 col-center" >
@@ -24,13 +24,13 @@
 						</div>
 				</div>
 				<div class='m-top-30 text-center'>
-					<hr class='yellow-hr'></hr>
-					<span class='mid-item bg-grey color-white'>{{ 'TO' | langTranslate: appConvertedLang['TO'] }}</span>
+					<hr class='App_color_hr'></hr>
+					<span class='mid-item bg-grey App_color_code'>{{ 'TO' | langTranslate: appConvertedLang['TO'] }}</span>
 				</div>
 				
 				<div class="row ">
 						<div class="col  col-center" >
-								<p class='color-white'>{{ 'DROP POINT' | langTranslate: appConvertedLang['DROP_POINT'] }}</p>
+								<p class='App_color_code'>{{ 'DROP POINT' | langTranslate: appConvertedLang['DROP_POINT'] }}</p>
 							<div class=" color-gery">{{details.drop_area}}</div>
 						</div>
 						<div class="col   col-center" >
@@ -39,29 +39,29 @@
 				</div>
 				
 			</div>
-	<p class='text-center color-yellow bg-light p-head no-margin'>{{ 'VEHICLE DETAILS' | langTranslate: appConvertedLang['VEHICLE_DETAILS'] }}</p>
+	<p class='text-center color-white bg-light p-head no-margin'>{{ 'VEHICLE DETAILS' | langTranslate: appConvertedLang['VEHICLE_DETAILS'] }}</p>
 			
 			<div class="row no-padding b-border-light">
 						<div class="col  r-border-light p-10 text-center" >
-							<p class='color-white p-head '>{{ 'CAB TYPE' | langTranslate: appConvertedLang['CAB_TYPE'] }}</p>
+							<p class='App_color_code p-head '>{{ 'CAB TYPE' | langTranslate: appConvertedLang['CAB_TYPE'] }}</p>
 							<p class='color-gery'>{{details.taxi_type}}</p>
 						</div>
 						<div class="col  p-10 text-center" >
-							<p class='color-white p-head '>{{ 'DRIVER DETAILS' | langTranslate: appConvertedLang['DRIVER_DETAILS'] }}</p>
+							<p class='App_color_code p-head '>{{ 'DRIVER DETAILS' | langTranslate: appConvertedLang['DRIVER_DETAILS'] }}</p>
 							<p class='color-gery'>{{details.driver}}</p>
 						</div>
 			</div>
 			
 			<div id='det-box2' class='b-border-light f-size-17'>
 				<div class='row'>
-			<div class='col'><p class='color-yellow p-head no-margin'>{{ 'Payment Details' | langTranslate: appConvertedLang['Payment_Details'] }}</p> </div>
+			<div class='col'><p class='App_color_code p-head no-margin'>{{ 'Payment Details' | langTranslate: appConvertedLang['Payment_Details'] }}</p> </div>
 				</div>
 				<div class="row p-top-5  b-border-light">
 						<div class="col  p-10 col-center" >
 							<p class='color-gery no-margin'>{{ 'Distance' | langTranslate: appConvertedLang['Distance'] }}</p>
 						</div>
 						<div class="col   p-10 text-center col-center" >
-							<p class='pull-right'><span class='color-gery'>{{details.km}}</span> <span class='color-yellow'>km</span></p>
+							<p class='pull-right'><span class='color-gery'>{{details.km}}</span> <span class='App_color_code'>km</span></p>
 						</div>
 				</div>
 				<div class="row p-top-5 b-border-light">
@@ -69,12 +69,12 @@
 							<p class='color-gery no-margin'>{{ 'Total Amount' | langTranslate: appConvertedLang['Total_Amount'] }}</p>
 						</div>
 						<div class="col   p-10 text-center col-center" >
-							<p class='pull-right'><span class='color-yellow'>₹</span> <span class='color-gery'>{{details.amount}}</span></p>
+							<p class='pull-right'><span class='App_color_code'>₹</span> <span class='color-gery'>{{details.amount}}</span></p>
 						</div>
 				</div>
 			
 			</div>	
-			<p class='text-center color-white p-head'>{{ 'SEND YOUR FEED BACK' | langTranslate: appConvertedLang['SEND_YOUR_FEED_BACK'] }}</p>
+			<!--<p class='text-center App_color_code p-head'>{{ 'SEND YOUR FEED BACK' | langTranslate: appConvertedLang['SEND_YOUR_FEED_BACK'] }}</p>-->
 		</div>
 	<div class='color-white text-center net-error' >{{ 'No network connection!' | langTranslate: appConvertedLang['No_network_connection'] }}</div>	
 	</ion-content>

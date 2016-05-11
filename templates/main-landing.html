@@ -40,7 +40,7 @@
 			<div id='tab-hide' class='bg-dark1 visible'> 
 				<div class='head-box text-center'>
 					<div class='vertical-middle'>
-						<span class='color-yellow d-block '>{{selected_cab.cartype}}</span>
+						<span class='App_color_code d-block '>{{selected_cab.cartype}}</span>
 						<span class='color-gery d-block'>{{ 'Toyota etios, tata indigo, maruti dezire.' | langTranslate: appConvertedLang['Toyota_etios_tata_indigo_maruti_dezire'] }}</span>
 					</div>
 				</div>
@@ -53,19 +53,19 @@
 					<div class="row ">
 						<div class="item-rate col col-33">
 							<div class='vertical-middle'>
-								<p class='color-gery'><b><span class='color-yellow f-size-20'>₹ </span> {{selected_cab.intailrate}}</b></p>
+								<p class='color-gery'><b><span class='App_color_code f-size-20'>₹ </span> {{selected_cab.intailrate}}</b></p>
 								<p class='color-gery'>{{ 'First' | langTranslate: appConvertedLang['First'] }}{{ selected_cab.intialkm }}km</p>
 							</div>
 						</div>
 						<div class="item-rate col col-33">
 							<div class='vertical-middle'>
-								<p class='color-gery'><b><span class='color-yellow f-size-20'>₹ </span>{{selected_cab.standardrate}}/km</b></p>
+								<p class='color-gery'><b><span class='App_color_code f-size-20'>₹ </span>{{selected_cab.standardrate}}/km</b></p>
 								<p class='color-gery'> {{ 'After' | langTranslate: appConvertedLang['After'] }} {{ selected_cab.intialkm }}km</p>
 							</div>
 						</div>
 						<div class="item-rate col col-33 no-border">
 							<div class='vertical-middle'>
-								<p class='color-gery'><b><span class='color-yellow f-size-20'>₹ </span>1/min</b></p>
+								<p class='color-gery'><b><span class='App_color_code f-size-20'>₹ </span>1/min</b></p>
 								<p class='color-gery'>{{ 'Ride time rate' | langTranslate: appConvertedLang['Ridetime_rate'] }}</p>
 							</div>
 						</div>
@@ -79,7 +79,7 @@
 					
             <div class="row no-padding text-center ">
                 <div class="col col-25" ng-class="{active_cab : active_cab == $index }" ng-click='clicked_item($index)' ng-repeat="cab in cabs">
-                    <div class="col color-yellow">{{cab.cartype | limitTo:7 }}<span ng-show='cab.cartype.length > 7' >..</span></div>
+                    <div class="col App-color-code">{{cab.cartype | limitTo:7 }}<span ng-show='cab.cartype.length > 7' >..</span></div>
                     <img ng-src='img/{{cab.cartype}}.png' err-SRC="img/Sedan.png" style='width: 50px' />
                     <!-- <div class="col color-gery">{{day.number}}</div> -->
                     

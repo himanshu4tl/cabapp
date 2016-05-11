@@ -13,7 +13,7 @@ App.factory("landInit", function ($rootScope) {
 								"saturation": 36
 							},
 							{
-								"color": "#000000"
+								"color": "#000"
 							},
 							{
 								"lightness": 40
