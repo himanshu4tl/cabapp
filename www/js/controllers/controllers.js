@@ -302,7 +302,7 @@ App.controller('AppCtrl', function($scope,$rootScope,$cordovaNetwork, $ionicModa
 	}
 
 	$scope.facebookLogin = function () {
-		$cordovaOauth.facebook("415834555280405", ["email"]).then(function (result) {
+		$cordovaOauth.facebook("1037460829623875", ["email"]).then(function (result) {
 			$scope.oauthResult = result;
 			//alert(JSON.stringify($scope.oauthResult,null,4))
 			WebService.show_loading();
