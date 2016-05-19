@@ -128,4 +128,12 @@
     background-color: #000 !important;
     position: relative;
 }
+.splash_bg
+{
+    background-color:#012271;
+}
+.sign_btn
+{
+    background-color: yellow;
+}
 /* .pac-container { z-index: 10000 !important; } */
